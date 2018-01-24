@@ -6,12 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
     <title>Color Mash</title>
   </head>
 
   <body>
+    <div id="header-wrapper">
+      <h1 onmouseover="shuffleHeader()" onmouseout="whitening()">
+        <span class="letter-container">c</span>
+        <span class="letter-container">o</span>
+        <span class="letter-container">l</span>
+        <span class="letter-container">o</span>
+        <span class="letter-container">r</span>
+        <span class="letter-container">-</span>
+        <span class="letter-container">m</span>
+        <span class="letter-container">a</span>
+        <span class="letter-container">s</span>
+        <span class="letter-container">h</span>
+      </h1>
+      <a href="about.html">about</a>
+    </div>
     <div id="content-wrapper">
-      <button onclick="shuffleColor()">Shuffle</button>
+      <button class="myButton" onclick="shuffleColor()">Shuffle</button>
       <div id="content">
       </div>
     </div>

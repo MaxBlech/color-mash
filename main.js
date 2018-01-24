@@ -1,5 +1,5 @@
 var content = document.getElementById("content");
-var colors = ["blue", "red", "green", "yellow", "purple", "magenta", "black", "white", "grey"];
+var colors = ["blue", "red", "green", "yellow", "magenta", "cyan", "black", "white"];
 
 (function () {
   for (var i = 0; i <= 4800; i++) {
@@ -10,7 +10,20 @@ var colors = ["blue", "red", "green", "yellow", "purple", "magenta", "black", "w
 })();
 
 var divs = document.getElementsByClassName("pixel-container");
+var letters = document.getElementsByClassName("letter-container");
 
+function shuffleHeader() {
+  for (var i = 0; i < letters.length; i++) {
+    var index = Math.floor(Math.random() * colors.length);
+    var pick = colors[index];
+    letters[i].style.color = pick;
+  }
+}
+function whitening() {
+  for (var i = 0; i < letters.length; i++) {
+    letters[i].style.color = "#ffffff";
+  }
+}
 function shuffleColor() {
   for (var i = 0; i < divs.length; i++) {
     var index = Math.floor(Math.random() * colors.length);
