@@ -22,7 +22,7 @@ button {
   width: 80%;
   height: 80%;
   display: grid;
-  grid-template: repeat(6, 1fr) / repeat(8, 1fr);
+  grid-template: repeat(60, 1fr) / repeat(80, 1fr);
 }
 /* .pixel-container {
   background: red;
