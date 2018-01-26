@@ -36,6 +36,8 @@ a {
   background: #282828;
 }
 button {
+  width: 15%;
+  height: 100%;
   margin: 2%;
 	font-family: "Cutive Mono";
 	font-size: inherit;
@@ -62,11 +64,19 @@ button:hover {
   height: 80%;
   display: grid;
   grid-template: repeat(60, 1fr) / repeat(80, 1fr);
+  margin: 5% 0 0 0;
 }
 input {
   z-index: 99;
   background: #282828;
-  border: none;
+  border: solid;
+  padding: 0;
+  margin: 2%;
+}
+#color-picker {
+  width: 10%;
+  height: 100%;
+  border: 1px solid #ffffff;
 }
 #button-wrapper {
   width: 100%;
@@ -74,4 +84,21 @@ input {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+}
+
+@media screen and (max-width: 650px){
+  button {
+    font-size: 0.8rem;
+  }
+  #content-wrapper {
+    flex-direction: column-reverse;
+  }
+  #content {
+    margin: 0 0 5% 0;
+  }
+}
+@media screen and (max-width: 500px){
+  button {
+    font-size: 0.6rem;
+  }
 }
