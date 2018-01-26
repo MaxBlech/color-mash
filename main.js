@@ -37,9 +37,18 @@ function whitening() {
   }
 }
 function shuffleColor() {
-  for (var i = 0; i < divs.length; i++) {
-    var index = Math.floor(Math.random() * colors.length);
-    var pick = colors[index];
-    divs[i].style.background = pick;
-  }
+    for (var i = 0; i < divs.length; i++) {
+      var index = Math.floor(Math.random() * colors.length);
+      var pick = colors[index];
+      divs[i].style.background = pick;
+    }
 }
+// function shuffleColorAuto() {
+//   setInterval(function () {
+//     for (var i = 0; i < divs.length; i++) {
+//       var index = Math.floor(Math.random() * colors.length);
+//       var pick = colors[index];
+//       divs[i].style.background = pick;
+//     }
+//   }, 500);
+// }
