@@ -27,7 +27,12 @@
       <a href="about.html">about</a>
     </div>
     <div id="content-wrapper">
-      <button class="myButton" onclick="shuffleColor()">Shuffle</button>
+      <div id="button-wrapper">
+          <input type="color" id="color-picker">
+          <button onclick="addColor()">Add Color</button>
+          <button onclick="clearColors()">Clear Colors</button>
+          <button class="myButton" onclick="shuffleColor()">Shuffle</button>
+      </div>
       <div id="content">
       </div>
     </div>
