@@ -102,3 +102,15 @@ input {
     font-size: 0.6rem;
   }
 }
+@media (pointer: fine) { 
+  button:hover {
+    color: #ffffff;
+    background: #282828;
+  }
+ }
+ @media (pointer: none) { 
+  button:hover {
+    color: #ffffff;
+    background: #282828;
+  }
+ }
