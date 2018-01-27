@@ -1,27 +1,30 @@
-self.addEventListener('install', function (event) {
+var cacheNames = "simple-sw-v1";
+
+self.addEventListener("install", function (event) {
   event.waitUntil(
-    caches.open('simple-sw-v1').then(function (cache) {
+    caches.open(cacheNames).then(function (cache) {
 
       return cache.addAll([
-        './',
-        './index.html',
-        './about.html',
-        'https://fonts.googleapis.com/css?family=Cutive+Mono',
-        './about.css',
-        './main.css',
-        './main.js',
-        './404.html',
-        './favicon.ico'
+        "./",
+        "./index.html",
+        "./about.html",
+        "https://fonts.googleapis.com/css?family=Cutive+Mono",
+        "./about.css",
+        "./main.css",
+        "./main.js",
+        "./404.html",
+        "./favicon.ico",
+        "./manifest.json"
       ]);
     })
   )
 });
 
-self.addEventListener('activate', function (event) {
+self.addEventListener("activate", function (event) {
   event.waitUntil(
     caches.keys().then(function (cacheNames) {
       return Promise.all(cacheNames.map(function (thisCacheName) {
-        if (thisCacheName !== cacheName) {
+        if (thisCacheName !== cacheNames) {
           return caches.delete(thisCacheName);
         }
       }))
@@ -29,7 +32,7 @@ self.addEventListener('activate', function (event) {
   )
 });
 
-self.addEventListener('fetch', function (event) {
+self.addEventListener("fetch", function (event) {
   event.respondWith(
     caches.match(event.request).then(function (response) {
       if (response) {

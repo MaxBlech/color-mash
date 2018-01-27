@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <title>Color Mash</title>
+    <title>color-mash</title>
   </head>
 
   <body>
@@ -39,6 +39,14 @@
       <div id="content">
       </div>
     </div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("sw.js").then(function (registration) {
+          });
+        });
+      }
+    </script>
     <script src="sw.js"></script>
     <script src="main.js"></script>
   </body>
