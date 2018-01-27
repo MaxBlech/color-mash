@@ -1,5 +1,5 @@
 var content = document.getElementById("content");
-var colors = ["blue", "red", "green", "yellow", "magenta", "cyan", "black", "white"];
+var colors = [];
 
 (function () {
   for (var i = 0; i <= 4800; i++) {
@@ -12,11 +12,23 @@ var colors = ["blue", "red", "green", "yellow", "magenta", "cyan", "black", "whi
 var divs = document.getElementsByClassName("pixel-container");
 var letters = document.getElementsByClassName("letter-container");
 
-function shuffleHeader() {
+function shuffleHeader () {
   for (var i = 0; i < letters.length; i++) {
     var index = Math.floor(Math.random() * colors.length);
     var pick = colors[index];
     letters[i].style.color = pick;
+  }
+}
+function addColor () {
+  var color = document.getElementById("color-picker").value;
+  colors.push(color);
+}
+function clearColors () {
+  colors = [];
+  for (var i = 0; i < divs.length; i++) {
+    // var index = Math.floor(Math.random() * colors.length);
+    // var pick = colors[index];
+    divs[i].style.background = "";
   }
 }
 function whitening() {

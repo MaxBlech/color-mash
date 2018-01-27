@@ -1,0 +1,10 @@
+# Created by https://www.gitignore.io/api/firebase
+
+### Firebase ###
+.idea
+**/public/*
+**/node_modules/*
+**/.firebaserc
+firebase.json
+
+# End of https://www.gitignore.io/api/firebase
