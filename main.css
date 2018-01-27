@@ -104,3 +104,15 @@ input {
     font-size: 0.6rem;
   }
 }
+@media (pointer: coarse) {
+    button:active, button:focus {
+    color: #ffffff;
+    background: #282828;
+  }
+}
+@media (pointer: none) {
+    button:active, button:focus {
+    color: #ffffff;
+    background: #282828;
+  }
+}
