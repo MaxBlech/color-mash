@@ -65,6 +65,7 @@ button:hover {
   display: grid;
   grid-template: repeat(60, 1fr) / repeat(80, 1fr);
   margin: 5% 0 0 0;
+  border: 1px solid #eaeaea;
 }
 input {
   z-index: 99;
@@ -72,6 +73,7 @@ input {
   border: solid;
   padding: 0;
   margin: 2%;
+  cursor: pointer;
 }
 #color-picker {
   width: 10%;
