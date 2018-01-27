@@ -1,0 +1,64 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+#header-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1, a {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "Cutive Mono";
+  font-size: 1rem;
+  margin: 2%;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+#content-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #282828;
+}
+button {
+  margin: 2%;
+	font-family: "Cutive Mono";
+	font-size: inherit;
+	color: #ffffff;
+	background: none;
+	cursor: pointer;
+  padding: 1%;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid #ffffff;
+}
+button:hover {
+	color: #282828;
+	background: #fff;
+}
+#content {
+  width: 80%;
+  height: 80%;
+  display: grid;
+  grid-template: repeat(60, 1fr) / repeat(80, 1fr);
+}
