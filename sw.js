@@ -10,7 +10,8 @@ self.addEventListener('install', function (event) {
         './about.css',
         './main.css',
         './main.js',
-        './404.html'
+        './404.html',
+        './favicon.ico'
       ]);
     })
   )

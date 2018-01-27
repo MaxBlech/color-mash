@@ -3,11 +3,13 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#282828">
+    <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <title>Color Mash</title>
   </head>
 
@@ -29,10 +31,10 @@
     </div>
     <div id="content-wrapper">
       <div id="button-wrapper">
-          <input type="color" id="color-picker">
-          <button onclick="addColor()">Add Color</button>
-          <button onclick="clearColors()">Clear Colors</button>
-          <button class="myButton" onclick="shuffleColor()">Shuffle</button>
+        <input type="color" id="color-picker">
+        <button onclick="addColor()">Add Color</button>
+        <button onclick="clearColors()">Clear Colors</button>
+        <button class="myButton" onclick="shuffleColor()">Shuffle</button>
       </div>
       <div id="content">
       </div>

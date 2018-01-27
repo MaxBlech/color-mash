@@ -1,0 +1,32 @@
+{
+  "short_name": "color-mash",
+  "name": "color-mash by max m schneider",
+  "description": "pwa for creating custom color areas",
+  "icons": [
+    {
+      "src": "img/icon-4.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "img/icon-2.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "img/icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "img/iconx5.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html?launcher=true",
+  "orientation": "portrait",
+  "display": "standalone",
+  "theme_color": "#282828",
+  "background_color": "#282828"
+}
