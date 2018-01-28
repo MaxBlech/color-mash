@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#282828">
     <link rel="manifest" href="/manifest.json">
@@ -31,10 +31,10 @@
     </div>
     <div id="content-wrapper">
       <div id="button-wrapper">
-        <input type="color" id="color-picker">
-        <button onclick="addColor()">Add Color</button>
-        <button onclick="clearColors()">Clear Colors</button>
-        <button class="myButton" onclick="shuffleColor()">Shuffle</button>
+        <input aria-label="Pick a Color" type="color" id="color-picker">
+        <button aria-label="Add Color" onclick="addColor()">Add Color</button>
+        <button aria-label="Clear Colors" onclick="clearColors()">Clear Colors</button>
+        <button aria-label="Shuffle" class="myButton" onclick="shuffleColor()">Shuffle</button>
       </div>
       <div id="content"></div>
     </div>
