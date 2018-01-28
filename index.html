@@ -38,7 +38,19 @@
       </div>
       <div id="content"></div>
     </div>
-    <script>"serviceWorker" in navigator && window.addEventListener("load", function () { navigator.serviceWorker.register("sw.js").then(function (e) { }) })</script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("/sw.js").then(function (registration) {
+            // Registration was successful
+            console.log("ServiceWorker registration successful with scope: ", registration.scope);
+          }, function (err) {
+            // registration failed :(
+            console.log("ServiceWorker registration failed: ", err);
+          });
+        });
+      }
+    </script>
     <script src="sw.js"></script>
     <script src="main.js"></script>
   </body>
