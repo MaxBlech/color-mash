@@ -12,7 +12,6 @@ self.addEventListener("install", function (event) {
         "./about.css",
         "./main.css",
         "./main.js",
-        "./404.html",
         "./favicon.ico",
         "./manifest.json",
         "./src/DISTORTED-MAX.png"
