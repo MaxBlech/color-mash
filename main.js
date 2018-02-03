@@ -1,5 +1,5 @@
 var content = document.getElementById("content");
-var colors = [];
+var colors = ["cyan", "yellow", "magenta"];
 
 (function () {
   for (var i = 0; i <= 4800; i++) {
@@ -24,7 +24,7 @@ function addColor () {
   colors.push(color);
 }
 function clearColors () {
-  colors = [];
+  colors = ["cyan", "yellow", "magenta"];
   for (var i = 0; i < divs.length; i++) {
     // var index = Math.floor(Math.random() * colors.length);
     // var pick = colors[index];
