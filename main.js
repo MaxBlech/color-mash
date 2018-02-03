@@ -43,3 +43,4 @@ function shuffleColor() {
     divs[i].style.background = pick;
   }
 }
+shuffleColor();
